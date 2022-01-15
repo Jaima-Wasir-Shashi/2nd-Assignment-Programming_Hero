@@ -32,6 +32,24 @@ a{
     letter-spacing: 0px;
     margin-top: 16px;
     }
+    .button:hover{
+        animation: blink .5s linear 1 forwards;
+    }
+    @keyframes blink {
+        0%{
+            background-color: crimson;
+            transform: scale(1.2);
+        }
+        
+        50%{
+            background-color: transparent;
+            transform: scale(1.2);
+        }
+        100%{
+            background-color: crimson;
+            transform: scale(1.2);
+        }
+    }
     h4{
         width: 1155px;
         margin: 20px auto 10px;
